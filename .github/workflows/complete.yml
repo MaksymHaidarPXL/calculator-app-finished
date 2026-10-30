@@ -1,5 +1,5 @@
 
-name: Build Example
+name: Complete Example
 
 on:
   workflow_dispatch:
@@ -45,3 +45,6 @@ jobs:
         with:
           name: application-build
           path: build.zip
+
+      - name: Better Test Reports Action
+        uses: mridang/action-test-reporter@v3.0.0
